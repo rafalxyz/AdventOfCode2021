@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using AdventOfCode21;
 
-const string dayNo = "03";
+const string dayNo = "04";
 
 var dataReader = new DataReader();
 
@@ -14,7 +14,7 @@ var solutionType = Assembly.GetExecutingAssembly()
     .Where(x => x.IsClass && x.IsAssignableTo(typeof(ISolution)) && x.Name.EndsWith(dayNo))
     .Single();
 
-var solution = (ISolution)Activator.CreateInstance(solutionType);
+var solution = (ISolution)Activator.CreateInstance(solutionType)!;
 
 var firstAnswer = solution.GetFirstAnswer(data);
 var secondAnswer = solution.GetSecondAnswer(data);
