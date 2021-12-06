@@ -14,8 +14,6 @@ namespace AdventOfCode21.Solutions
 
         private record Coords(int Horizontal, int Depth, int Aim = 0);
 
-
-
         private record Operation (OperationType Type, int Value)
         {
             public static Operation Parse(string data)
@@ -67,7 +65,7 @@ namespace AdventOfCode21.Solutions
         }
         
 
-        public int GetFirstAnswer(IEnumerable<string> data)
+        public long GetFirstAnswer(IEnumerable<string> data)
         {
             var operations = ParseData(data);
 
@@ -81,7 +79,7 @@ namespace AdventOfCode21.Solutions
             return coords.Horizontal * coords.Depth;
         }
 
-        public int GetSecondAnswer(IEnumerable<string> data)
+        public long GetSecondAnswer(IEnumerable<string> data)
         {
             var operations = ParseData(data);
 

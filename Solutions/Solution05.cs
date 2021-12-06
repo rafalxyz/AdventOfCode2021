@@ -114,7 +114,7 @@ namespace AdventOfCode21.Solutions
                 
         }
 
-        public int GetFirstAnswer(IEnumerable<string> data)
+        public long GetFirstAnswer(IEnumerable<string> data)
         {
             var lines = ParseData(data).Where(x => x.Start.X == x.End.X || x.Start.Y == x.End.Y).ToList();
 
@@ -135,7 +135,7 @@ namespace AdventOfCode21.Solutions
             return area.CountCoveredMoreThanTwice;
         }
 
-        public int GetSecondAnswer(IEnumerable<string> data)
+        public long GetSecondAnswer(IEnumerable<string> data)
         {
             var lines = ParseData(data).ToList();
 

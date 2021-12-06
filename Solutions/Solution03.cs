@@ -6,7 +6,7 @@ namespace AdventOfCode21.Solutions
 {
     internal class Solution03 : ISolution
     {
-        public int GetFirstAnswer(IEnumerable<string> data)
+        public long GetFirstAnswer(IEnumerable<string> data)
         {
             var numbers = data.ToArray();
 
@@ -23,7 +23,7 @@ namespace AdventOfCode21.Solutions
             return gamma * epsilon;
         }
 
-        public int GetSecondAnswer(IEnumerable<string> data)
+        public long GetSecondAnswer(IEnumerable<string> data)
         {
             var numbers = data.ToList();
 

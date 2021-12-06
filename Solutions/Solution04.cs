@@ -98,7 +98,7 @@ namespace AdventOfCode21.Solutions
             public bool IsMarked { get; set; }
         }
 
-        public int GetFirstAnswer(IEnumerable<string> data)
+        public long GetFirstAnswer(IEnumerable<string> data)
         {
             var (inputs, boardSet) = ParseData(data);
 
@@ -117,7 +117,7 @@ namespace AdventOfCode21.Solutions
             throw new InvalidOperationException();
         }
 
-        public int GetSecondAnswer(IEnumerable<string> data)
+        public long GetSecondAnswer(IEnumerable<string> data)
         {
             var allWinners = new List<Board>();
             Board? latestWinner = null;

@@ -6,14 +6,14 @@ namespace AdventOfCode21.Solutions
 {
     internal class Solution01 : ISolution
     {
-        public int GetFirstAnswer(IEnumerable<string> data)
+        public long GetFirstAnswer(IEnumerable<string> data)
         {
             var numbers = ParseData(data);
 
             return GetIncreaseCount(numbers, 1);
         }
 
-        public int GetSecondAnswer(IEnumerable<string> data)
+        public long GetSecondAnswer(IEnumerable<string> data)
         {
             var numbers = ParseData(data);
 

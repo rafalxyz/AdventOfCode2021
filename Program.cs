@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using AdventOfCode21;
 
-const string dayNo = "05";
+const string dayNo = "06";
 
 var dataReader = new DataReader();
 

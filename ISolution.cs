@@ -4,8 +4,8 @@ namespace AdventOfCode21
 {
     internal interface ISolution
     {
-        int GetFirstAnswer(IEnumerable<string> data);
+        long GetFirstAnswer(IEnumerable<string> data);
 
-        int GetSecondAnswer(IEnumerable<string> data);
+        long GetSecondAnswer(IEnumerable<string> data);
     }
 }
